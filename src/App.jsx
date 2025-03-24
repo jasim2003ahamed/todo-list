@@ -61,7 +61,7 @@ function App() {
         handleSubmit={handleSubmit}
       />
       <Content 
-        items={items.filter((item) => ((item.item).toLowerCase()).includes(search.toLowerCase()))}
+        items={items.filter(item => ((item.item).toLowerCase()).includes(search.toLowerCase()))}
         handleChange={handleChange}
         handleDelete={handleDelete}
       />
