@@ -9,15 +9,21 @@ function Content({items,handleChange,handleDelete}) {
         <ul>
           {items.map((item) => (
             <li className='item' key={item.id}>
-              <input 
+
+
+              <input id='item'
               type="checkbox"
               onChange={() => handleChange(item.id)}
               checked={item.checked} 
               />
 
-              <label 
+
+              <label htmlFor='item'
               onDoubleClick={() => handleChange(item.id)}>
-              {item.item}</label>
+              {item.item}
+              </label>
+
+              
               
               <FaTrashCan 
                 role='button'
