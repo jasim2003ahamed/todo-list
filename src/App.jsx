@@ -8,7 +8,7 @@ import SearchItem from './components/SearchItem'
 function App() {
 
   const [items,setItems] = useState(JSON.parse(localStorage.getItem("Todolist"))
-      )
+      || [] )
 
       const [newItem,setNewItem] = useState('') // This is for Input value get 
 
